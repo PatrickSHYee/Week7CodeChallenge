@@ -11,13 +11,13 @@ namespace Week7CodeChallenge.Controllers
         // GET: Business -> Work
         public ActionResult Work()
         {
-            return View();
+            return PartialView();
         }
 
         // GET: Business -> Careers
         public ActionResult Careers()
         {
-            return View();
+            return PartialView();
         }
     }
 }

@@ -1,17 +1,39 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<div class="container">
+        <form class="form-horizontal" method="post" action="@Url.Action("Contact", "Home")">
+            <label >Contact info:</label>
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <input type="text" placeholder="First Name" class="form-control" name="firstName" required/>
+                </div>
+                <div class="col-sm-6">
+                    <input type="text" placeholder="Last Name" class="form-control" name="lastName" required/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <input type="email" placeholder="emailMe@email.com" class="form-control" name="email" required />
+                </div>
+                <div class="col-sm-6">
+                    <input type="tel" placeholder="(303) 555-1235" class="form-control" name="phoneNum" required/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="text" placeholder="Company Name" class="form-control" name="compName" required/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="text" placeholder="Project Description" class="form-control" name="proDescr" required/>
+                </div>
+            </div>
+            <textarea class="form-control" name="comment" rows="7" placeholder="Comment"></textarea>
+            <div class="form-group">
+                <button class="btn btn-group-xs">Submit</button>
+            </div>
+        </form>
+</div>

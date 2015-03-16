@@ -2,13 +2,14 @@
     ViewBag.Title = "About";
 }
 
-<div class="container">
-    <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="#">Who</a></li>
-        <li role="presentation"><a href="#">What</a></li>
-        <li role="presentation"><a href="#">Why</a></li>
-        <li role="presentation"><a href="#">How</a></li>
-        <li role="presentation"><a href="#">Where</a></li>
-    </ul>
-    @*Partial view*@
-</div>
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active" onclick="OnAbout(0)"><a href="@Url.Action("Who", "Home")">Who</a></li>
+    <li role="presentation" onclick="OnAbout(1)"><a href="@Url.Action("What", "Home")">What</a></li>
+    <li role="presentation" onclick="OnAbout(2)"><a href="@Url.Action("Why", "Home")">Why</a></li>
+    <li role="presentation" onclick="OnAbout(3)"><a href="@Url.Action("How", "Home")">How</a></li>
+    <li role="presentation" onclick="OnAbout(4)"><a href="@Url.Action("Where", "Home")">Where</a></li>
+</ul>
+
+<div id="about" class="container"></div>
+
+<script>OnAbout(0);</script>

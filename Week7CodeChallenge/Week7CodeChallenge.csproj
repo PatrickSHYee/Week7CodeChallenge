@@ -240,7 +240,7 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_LayoutBk.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Home.cshtml" />
@@ -270,8 +270,14 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Business\Work.cshtml" />
     <Content Include="Views\Business\Careers.cshtml" />
-    <Content Include="Views\Business\ThankYou.cshtml" />
+    <Content Include="Views\Home\ThankYou.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\How.cshtml" />
+    <Content Include="Views\Home\Why.cshtml" />
+    <Content Include="Views\Home\What.cshtml" />
+    <Content Include="Views\Home\Where.cshtml" />
+    <Content Include="Views\Home\Who.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

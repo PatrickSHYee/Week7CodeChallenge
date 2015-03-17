@@ -12,13 +12,15 @@ namespace Week7CodeChallenge.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Contact
+    public partial class AJAX_ContactForm
     {
         public int ContactID { get; set; }
-        public string Name { get; set; }
-        public string Subject { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public string Email { get; set; }
-        public string Body { get; set; }
-        public System.DateTime SentDate { get; set; }
+        public string PhoneNum { get; set; }
+        public string CompanyName { get; set; }
+        public string ProjDescription { get; set; }
+        public string Comment { get; set; }
     }
 }

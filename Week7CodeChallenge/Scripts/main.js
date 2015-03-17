@@ -1,5 +1,15 @@
 ﻿$(document).ready(function () {
-    $('.nav-links a').on('click', function (event) {
+    
+    // contact forms
+    $('body').on('submit', '.ajax-form', function (event) {
+        event.preventDefault();
+        $.post($(this).data('posturl'), $(this).serialize(), function (data) {
+            $('.ajax-form-content').html(data);
+        })
+    })
+
+    // main links
+    $('.nav-links').on('click', function (event) {
         event.preventDefault();
         var aTagger = $(this).attr('href');
         $.get(aTagger, function (data) {
@@ -7,25 +17,22 @@
         })
     })
 
+    // loads the home page not the index
     $.get('/Home/Home', function (data) {
         $('#main-content').html(data);
     })
 })
 
-var arr_Href = ['/Home/Who', '/Home/What/', '/Home/Why/', '/Home/How/', '/Home/Where/'];
-
-function OnAbout(input) {
-    $.get(arr_Href[input], function (data) {
+// loads based on tab click for the about page
+function onAbout(input) {
+    $('.nav-tab-link').on('click', function (event) {
+        event.preventDefault();
+        $.get('/Home/', input, function (data) {
+            console.log(data);
+            $('#about').html(data);
+        })
+    })
+    $.get($(this), input, function (data) {
         $('#about').html(data);
     })
 }
-
-$('li a').on('click', function (e) {
-    console.log("hit");
-    e.preventDefault();
-    var aTagger = $(this);
-    $.get(aTagger.attr('href'), function (data) {
-        aTagger.children('li').toggleClass('active');
-    })
-    About(aTagger.attr('href'));
-})

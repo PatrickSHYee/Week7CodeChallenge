@@ -13,10 +13,10 @@ namespace Week7CodeChallenge.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ContactFormsEntities : DbContext
+    public partial class AJAXContactFormsEntities : DbContext
     {
-        public ContactFormsEntities()
-            : base("name=ContactFormsEntities")
+        public AJAXContactFormsEntities()
+            : base("name=AJAXContactFormsEntities")
         {
         }
     
@@ -25,6 +25,6 @@ namespace Week7CodeChallenge.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Contact> Contacts { get; set; }
+        public virtual DbSet<AJAX_ContactForm> AJAX_ContactForm { get; set; }
     }
 }

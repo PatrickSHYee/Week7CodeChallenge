@@ -1,15 +1,14 @@
 ﻿@{
     ViewBag.Title = "About";
-}
-
+    }
 <ul class="nav nav-tabs">
-    <li role="presentation" class="active" onclick="OnAbout(0)"><a href="@Url.Action("Who", "Home")">Who</a></li>
-    <li role="presentation" onclick="OnAbout(1)"><a href="@Url.Action("What", "Home")">What</a></li>
-    <li role="presentation" onclick="OnAbout(2)"><a href="@Url.Action("Why", "Home")">Why</a></li>
-    <li role="presentation" onclick="OnAbout(3)"><a href="@Url.Action("How", "Home")">How</a></li>
-    <li role="presentation" onclick="OnAbout(4)"><a href="@Url.Action("Where", "Home")">Where</a></li>
+    <li role="presentation" class="ajax-tab" onclick="OnAbout('Who')"><a class="ajax-tab-link"onclick="OnAbout('Who')">Who</a></li>
+    <li role="presentation" class="ajax-tab" onclick="OnAbout('What')"><a class="ajax-tab-link" href="#" onclick="OnAbout('Why')">What</a></li>
+    <li role="presentation" class="ajax-tab" onclick="OnAbout('Why')"><a class="ajax-tab-link" onclick="OnAbout('Why')" href="#">Why</a></li>
+    <li role="presentation" class="ajax-tab" onclick="OnAbout('How')"><a class="ajax-tab-link" onclick="OnAbout('How')" href="#">How</a></li>
+    <li role="presentation" class="ajax-tab" onclick="OnAbout('Where')"><a class="ajax-tab-link" onclick="OnAbout('Where')" href="#">Where</a></li>
 </ul>
 
-<div id="about" class="container"></div>
-
-<script>OnAbout(0);</script>
+<div id="about" class="container">
+    @Html.Partial("Who")
+</div>

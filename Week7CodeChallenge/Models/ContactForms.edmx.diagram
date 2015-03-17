@@ -4,8 +4,8 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="6c2fd808e4eb4f2cb70b480c675d94ea" Name="Diagram1">
-        <EntityTypeShape EntityType="ContactFormsModel.Contact" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="c0ebc012e22e4442aea1990d4a1d9529" Name="Diagram1">
+        <EntityTypeShape EntityType="AJAXContactFormModel.AJAX_ContactForm" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -27,7 +27,7 @@ textarea {
     height: 60px;
 }
 
-div{
+.subTopic{
     border: 1px solid #080808;
     padding:initial;
 }
@@ -36,6 +36,6 @@ img {
     width:100%;
 }
 
-.form-control {
-
+.ajax-tab li:hover{
+    cursor:pointer;
 }

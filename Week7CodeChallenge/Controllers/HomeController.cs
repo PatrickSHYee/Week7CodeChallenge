@@ -44,49 +44,18 @@ namespace Week7CodeChallenge.Controllers
         [HttpGet]
         public ActionResult Contact()
         {
-            return PartialView(new Models.Contact());
+            return PartialView(new Models.AJAX_ContactForm());
         }
 
         [HttpPost]
-        public ActionResult Contact(Models.Contact form)
+        public ActionResult Contact(Models.AJAX_ContactForm form)
         {
-            try
-            {
-                form.SentDate = DateTime.Now;
-                // context
-                Models.ContactFormsEntities db = new Models.ContactFormsEntities();
-                // add to table
-                db.Contacts.Add(form);
-                db.SaveChanges(); // save changes
-            }
-            catch (Exception e)
-            {
-                ViewBag.Message = e.Message;
-                return PartialView("Error");
-            }
-
-            // SMTP simple mail transfer protocol
-            MailMessage message = new MailMessage(form.Email, "patrickshyee@gmail.com");
-            SmtpClient client = new SmtpClient();
-
-            client.Host = "mail.dustinkraft.com";
-            client.Port = 587;
-            client.UseDefaultCredentials = false;
-            client.Credentials = new System.Net.NetworkCredential("postmaster@dustinkraft.com", "techIsFun1");
-
-            message.Subject = form.Subject;
-            message.Body = form.Body;
-            message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
-
-            client.Send(message);
-
-            // host: mail.dustinkraft.com
-            // port: 587
-            // user: postmaster@dustionkraft.com
-            // password: techIsFun1
-
-            // redirect the user to the thank you
-            return RedirectToAction("ThankYou", "Home");
+            // context
+            Models.AJAXContactFormsEntities db = new Models.AJAXContactFormsEntities();
+            // add to table
+            db.AJAX_ContactForm.Add(form);
+            db.SaveChanges(); // save changes
+            return Content("ThankYou");
         }
 
         public string GetLorem()

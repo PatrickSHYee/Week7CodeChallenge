@@ -50,6 +50,6 @@ C:\Users\Technologist SP\Documents\GitHub\Week7CodeChallenge\Week7CodeChallenge\
 C:\Users\Technologist SP\Documents\GitHub\Week7CodeChallenge\Week7CodeChallenge\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Technologist SP\Documents\GitHub\Week7CodeChallenge\Week7CodeChallenge\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Technologist SP\Documents\GitHub\Week7CodeChallenge\Week7CodeChallenge\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Technologist SP\Documents\GitHub\Week7CodeChallenge\Week7CodeChallenge\obj\Debug\Week7CodeChallenge.csprojResolveAssemblyReference.cache
 C:\Users\Technologist SP\Documents\GitHub\Week7CodeChallenge\Week7CodeChallenge\obj\Debug\Week7CodeChallenge.dll
 C:\Users\Technologist SP\Documents\GitHub\Week7CodeChallenge\Week7CodeChallenge\obj\Debug\Week7CodeChallenge.pdb
+C:\Users\Technologist SP\Documents\GitHub\Week7CodeChallenge\Week7CodeChallenge\obj\Debug\Week7CodeChallenge.csprojResolveAssemblyReference.cache

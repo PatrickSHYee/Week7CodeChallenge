@@ -36,6 +36,6 @@ img {
     width:100%;
 }
 
-.ajax-tab li:hover{
-    cursor:pointer;
+a:hover .ajax-tab-link{
+    cursor: pointer;
 }

@@ -1,12 +1,12 @@
 ﻿@{
     ViewBag.Title = "About";
     }
-<ul class="nav nav-tabs">
-    <li role="presentation" class="ajax-tab" onclick="OnAbout('Who')"><a class="ajax-tab-link"onclick="OnAbout('Who')">Who</a></li>
-    <li role="presentation" class="ajax-tab" onclick="OnAbout('What')"><a class="ajax-tab-link" href="#" onclick="OnAbout('Why')">What</a></li>
-    <li role="presentation" class="ajax-tab" onclick="OnAbout('Why')"><a class="ajax-tab-link" onclick="OnAbout('Why')" href="#">Why</a></li>
-    <li role="presentation" class="ajax-tab" onclick="OnAbout('How')"><a class="ajax-tab-link" onclick="OnAbout('How')" href="#">How</a></li>
-    <li role="presentation" class="ajax-tab" onclick="OnAbout('Where')"><a class="ajax-tab-link" onclick="OnAbout('Where')" href="#">Where</a></li>
+<ul class="nav nav-tabs ajax-tab">
+    <li role="presentation"><a class="ajax-tab-links" data-type="@Url.Action("Who", "Home")" href="#">Who</a></li>
+    <li role="presentation"><a class="ajax-tab-links" data-type="@Url.Action("What", "Home")" href="#">What</a></li>
+    <li role="presentation"><a class="ajax-tab-links" data-type="@Url.Action("Why", "Home")" href="#">Why</a></li>
+    <li role="presentation"><a class="ajax-tab-links" data-type="@Url.Action("How", "Home")" href="#">How</a></li>
+    <li role="presentation"><a class="ajax-tab-links" data-type="@Url.Action("Where", "Home")" href="#">Where</a></li>
 </ul>
 
 <div id="about" class="container">
